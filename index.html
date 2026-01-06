@@ -3,13 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LineItem Logic - AI Invoice Automation for QuickBooks</title>
+    <title>LineItem Logic - Automated Invoice Processing</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Inter', sans-serif; }
+        
+        /* THE "QUICKBOOKS GREEN" THEME */
+        .bg-qb-green { background-color: #2CA01C; }
+        .bg-qb-green:hover { background-color: #1E7E14; }
+        
+        /* New Gradient: Green to Navy */
         .gradient-text {
-            background: linear-gradient(90deg, #2563EB 0%, #1E40AF 100%);
+            background: linear-gradient(90deg, #2CA01C 0%, #0F172A 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
@@ -19,38 +25,35 @@
 
     <nav class="flex items-center justify-between px-6 py-4 bg-white border-b border-slate-200 sticky top-0 z-50">
         <a href="#" class="flex items-center">
-    <img src="logo-full.png" alt="LineItem Logic" class="h-12 w-auto object-contain">
-</a>
+            <img src="logo-full.png" alt="LineItem Logic" class="h-12 w-auto object-contain">
+        </a>
         <div class="hidden md:flex gap-8 text-sm font-medium text-slate-600">
-            <a href="#features" class="hover:text-blue-600 transition">Features</a>
-            <a href="#how-it-works" class="hover:text-blue-600 transition">How it Works</a>
-            <a href="#pricing" class="hover:text-blue-600 transition">Pricing</a>
+            <a href="#features" class="hover:text-green-700 transition">Features</a>
+            <a href="#how-it-works" class="hover:text-green-700 transition">How it Works</a>
+            <a href="#pricing" class="hover:text-green-700 transition">Pricing</a>
         </div>
         <div class="flex gap-4">
-            <a href="https://app.lineitemlogic.com" class="text-sm font-semibold text-slate-600 hover:text-blue-600 py-2">Log In</a>
-            <a href="https://app.lineitemlogic.com" class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-lg text-sm font-semibold transition shadow-md">Get Started</a>
+            <a href="https://app.lineitemlogic.com" class="text-sm font-semibold text-slate-600 hover:text-green-700 py-2">Log In</a>
+            <a href="https://app.lineitemlogic.com" class="bg-qb-green text-white px-5 py-2 rounded-lg text-sm font-semibold transition shadow-md hover:shadow-lg">Get Started</a>
         </div>
     </nav>
 
     <header class="max-w-6xl mx-auto px-6 py-20 md:py-32 text-center">
-        <div class="inline-block bg-blue-50 text-blue-700 px-4 py-1.5 rounded-full text-sm font-medium mb-6 border border-blue-100">
+        <div class="inline-block bg-green-50 text-green-700 px-4 py-1.5 rounded-full text-sm font-medium mb-6 border border-green-100">
             ✨ Now Integrated with QuickBooks Online
         </div>
         <h1 class="text-5xl md:text-6xl font-extrabold tracking-tight text-slate-900 mb-6 leading-tight">
-    Stop Typing Invoices.<br>
-    
-    <span class="gradient-text">Let </span>
-    
-    <span class="text-slate-900">LineItem Logic</span>
-    
-    <span class="gradient-text"> Do The Heavy Lifting.</span>
-</h1>
+            Stop Typing Invoices.<br>
+            <span class="gradient-text">Let </span>
+            <span class="text-slate-900">LineItem Logic</span>
+            <span class="gradient-text"> Do The Heavy Lifting.</span>
+        </h1>
         <p class="text-xl text-slate-500 max-w-2xl mx-auto mb-10 leading-relaxed">
-            Upload a PDF and watch LineItem Logic extract every SKU, quantity, and price. 
+            Upload a PDF and watch our AI extract every SKU, quantity, and price. 
             We sync directly to QuickBooks with 100% line-item accuracy.
         </p>
         <div class="flex flex-col md:flex-row gap-4 justify-center">
-            <a href="https://app.lineitemlogic.com" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl text-lg font-semibold transition shadow-lg hover:shadow-xl hover:-translate-y-1">
+            <a href="https://app.lineitemlogic.com" class="bg-qb-green text-white px-8 py-4 rounded-xl text-lg font-semibold transition shadow-lg hover:shadow-xl hover:-translate-y-1">
                 Start Scanning for Free
             </a>
             <a href="#features" class="bg-white hover:bg-slate-50 text-slate-700 border border-slate-300 px-8 py-4 rounded-xl text-lg font-semibold transition">
@@ -73,7 +76,7 @@
             <div class="grid md:grid-cols-3 gap-8">
                 <div class="p-8 bg-slate-50 rounded-2xl hover:bg-white hover:shadow-lg transition border border-slate-100">
                     <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center text-2xl mb-6">🧠</div>
-                    <h3 class="text-xl font-bold mb-3">AI That Learns</h3>
+                    <h3 class="text-xl font-bold mb-3">Adaptive Memory</h3>
                     <p class="text-slate-500 leading-relaxed">
                         Our AI remembers your vendor mappings. Teach it once that "Paper Towels" is "Supplies," and it never asks again.
                     </p>
@@ -87,9 +90,9 @@
                 </div>
                 <div class="p-8 bg-slate-50 rounded-2xl hover:bg-white hover:shadow-lg transition border border-slate-100">
                     <div class="w-12 h-12 bg-purple-100 text-purple-600 rounded-lg flex items-center justify-center text-2xl mb-6">⚡</div>
-                    <h3 class="text-xl font-bold mb-3">Split-Row Technology</h3>
+                    <h3 class="text-xl font-bold mb-3">Smart-Stitch Technology</h3>
                     <p class="text-slate-500 leading-relaxed">
-                        Got an invoice that breaks a table across two pages? Our "Nuclear" prompt engine stitches it back together instantly.
+                        Got an invoice that breaks a table across two pages? Our prompt engine stitches it back together instantly.
                     </p>
                 </div>
             </div>
@@ -101,10 +104,10 @@
             <h2 class="text-3xl font-bold mb-4">Simple, Transparent Pricing</h2>
             <p class="text-slate-500 mb-12">Pay for the automation, keep the peace of mind.</p>
             
-            <div class="bg-white p-8 rounded-2xl shadow-xl border border-blue-100 max-w-md mx-auto relative overflow-hidden">
-                <div class="absolute top-0 right-0 bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-bl-lg">POPULAR</div>
+            <div class="bg-white p-8 rounded-2xl shadow-xl border border-green-100 max-w-md mx-auto relative overflow-hidden">
+                <div class="absolute top-0 right-0 bg-qb-green text-white text-xs font-bold px-3 py-1 rounded-bl-lg">POPULAR</div>
                 <h3 class="text-2xl font-bold text-slate-800 mb-2">Pro Plan</h3>
-                <div class="text-5xl font-extrabold text-blue-600 mb-2">$29<span class="text-lg text-slate-400 font-normal">/mo</span></div>
+                <div class="text-5xl font-extrabold text-green-600 mb-2">$29<span class="text-lg text-slate-400 font-normal">/mo</span></div>
                 <p class="text-slate-500 mb-8">Perfect for growing businesses.</p>
                 
                 <ul class="text-left space-y-4 mb-8">
@@ -130,9 +133,15 @@
     </section>
 
     <footer class="bg-white border-t border-slate-200 py-12 text-center text-slate-500 text-sm">
-        <p>&copy; 2024 LineItem Logic. All rights reserved.</p>
+        <p>&copy; 2026 LineItem Logic. All rights reserved.</p>
         <p class="mt-2">Made with 🤖 and ❤️ in the USA.</p>
-        <p class="mt-4"><a href="mailto:support@lineitemlogic.com" class="text-blue-600 hover:underline">Contact Support</a></p>
+        <div class="mt-4 space-x-4">
+            <a href="mailto:support@lineitemlogic.com" class="hover:text-green-600 hover:underline">Contact Support</a>
+            <span>|</span>
+            <a href="terms.html" class="hover:text-green-600 hover:underline">Terms</a>
+            <span>|</span>
+            <a href="privacy.html" class="hover:text-green-600 hover:underline">Privacy</a>
+        </div>
     </footer>
 
 </body>
